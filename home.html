@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    hello
+  <p id="p1"></p>
+  <button id="button_increase" onclick="Increase()">Increase</button>
+  <button id="button_decrease" onclick="Decrease()">Decrease</button>
+  <button id="button_reset" onclick="RESET()">RESET</button>
+  <p id="p1"></p>
+    <script>
+       
+            var p = 0
+            document.getElementById('p1').innerHTML = p
+            function Increase() {
+                p = p + 1
+                document.getElementById('p1').innerHTML = p
+            }
+            function Decrease() {
+              p = p - 1
+              document.getElementById('p1').innerHTML = p
+
+            }
+            function RESET() {
+                p = 0              
+                document.getElementById('p1').innerHTML = p
+            }
+
+
+
+        
+    </script>
+   
+  
 </body>
+
 </html>
